@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakshi Sadgir – Software Developer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root{--bg:#f4f3f9;--surface:#fff;--ink:#1c1b2e;--muted:#5d5b75;--line:#dcd9ea;--accent:#4a3fd1;--accent-ink:#fff;--mint:#0f766e;--code:#1c1b2e;--code-ink:#e8e6ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14131f;--surface:#1d1c2e;--ink:#eceaff;--muted:#a3a1bf;--line:#33314a;--accent:#9d94ff;--accent-ink:#14131f;--mint:#5eead4;--code:#0d0c16;--code-ink:#e8e6ff}}
+:root[data-theme="dark"]{--bg:#14131f;--surface:#1d1c2e;--ink:#eceaff;--muted:#a3a1bf;--line:#33314a;--accent:#9d94ff;--accent-ink:#14131f;--mint:#5eead4;--code:#0d0c16;--code-ink:#e8e6ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;flex-wrap:wrap}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+nav div{display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:56px 0 80px}
+.hero h1{font-size:clamp(44px,8vw,88px);font-weight:800;letter-spacing:-.03em}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:34em;margin:22px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:500;border:1.5px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.code{background:var(--code);color:var(--code-ink);border-radius:14px;padding:22px;font:400 14px/1.7 "JetBrains Mono",ui-monospace,monospace;overflow-x:auto;white-space:pre}
+.code .bar{color:#9d94ff;display:block;margin-bottom:10px}
+.code .k{color:#8be9d6}.code .s{color:#ffd9a0}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(30px,5vw,44px);font-weight:700;letter-spacing:-.02em;margin-bottom:32px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 16px;max-width:34em}
+.facts{display:grid;gap:14px;align-content:start}
+.facts div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.facts strong{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:22px}
+.facts span{color:var(--muted);font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.skills div{border-left:3px solid var(--accent);padding:2px 0 2px 16px}
+.skills h3{font-size:19px;margin-bottom:6px}
+.skills p{margin:0;color:var(--muted);font-size:15.5px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px;margin-bottom:22px}
+.proj.big{border-color:var(--accent);border-width:2px}
+.proj h3{font-size:26px;margin-bottom:6px}
+.stack{color:var(--mint);font:400 13.5px "JetBrains Mono",monospace;margin:0 0 14px}
+.proj ul{margin:0 0 18px;padding-left:20px}.proj li{margin-bottom:6px;max-width:44em}
+.proj a.l{font-weight:500;color:var(--accent)}
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.tl li{padding:0 0 30px 26px;position:relative}
+.tl li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl h3{font-size:21px}.tl .when{color:var(--muted);font-size:15px;margin:2px 0 8px}
+.tl p,.tl ul{margin:0;max-width:44em}.tl ul{padding-left:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.paper{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px}
+.paper h3{font-size:22px;margin-bottom:8px}
+.paper p{margin:0 0 12px;color:var(--muted)}
+.contact{text-align:left}
+.contact a.mail{font:800 clamp(24px,5vw,48px)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;word-break:break-all;color:var(--accent);text-decoration-thickness:3px;text-underline-offset:6px}
+footer{padding:30px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:780px){.hero,.about,.two{grid-template-columns:1fr}.hero{padding-top:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+<b>Sakshi Sadgir</b>
+<div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+<div>
+<h1>I connect AI models to apps people use.</h1>
+<p class="lead">I’m Sakshi, an Information Technology graduate from Pune. I build Python and FastAPI backends, link them to mobile apps, and debug the points where the pieces meet.</p>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="code" role="img" aria-label="A JSON summary of Sakshi’s profile"><span class="bar">GET /sakshi</span>{
+  <span class="k">"role"</span>: <span class="s">"Software developer (fresher)"</span>,
+  <span class="k">"degree"</span>: <span class="s">"B.E. IT, 2026"</span>,
+  <span class="k">"cgpa"</span>: <span class="s">8.21</span>,
+  <span class="k">"languages"</span>: [<span class="s">"Python"</span>, <span class="s">"Java"</span>, <span class="s">"SQL"</span>],
+  <span class="k">"backend"</span>: <span class="s">"FastAPI"</span>,
+  <span class="k">"certified"</span>: <span class="s">"Azure AZ-900"</span>,
+  <span class="k">"published"</span>: <span class="s">true</span>,
+  <span class="k">"location"</span>: <span class="s">"Pune, India"</span>
+}</div>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I recently finished my B.E. in Information Technology at Smt. Kashibai Navale College of Engineering, Pune, with a CGPA of 8.21/10.</p>
+<p>My work so far covers REST API development, application integration and troubleshooting. I like finding out why two parts of a system don’t talk to each other, then fixing it.</p>
+<p>I’m interested in scalable cloud applications, good software engineering practice and AI-assisted development.</p>
+</div>
+<div class="facts">
+<div><strong>8.21 / 10</strong><span>CGPA, B.E. Information Technology (SPPU)</span></div>
+<div><strong>AZ-900</strong><span>Microsoft Certified: Azure Fundamentals, 2025</span></div>
+<div><strong>1 paper</strong><span>Published in IJEDR, January 2026</span></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Languages</h3><p>Python, Java, SQL</p></div>
+<div><h3>Computer science</h3><p>Data structures and algorithms, OOP, problem solving, design pattern fundamentals</p></div>
+<div><h3>Software engineering</h3><p>REST APIs, FastAPI, SDLC, Agile and CI/CD fundamentals</p></div>
+<div><h3>Databases</h3><p>MySQL, Firebase Authentication, Cloud Firestore</p></div>
+<div><h3>Data science and ML</h3><p>Pandas, NumPy, EDA, Scikit-learn, cross-validation, model evaluation, imbalanced datasets</p></div>
+<div><h3>AI and NLP</h3><p>Hugging Face Transformers, sentiment analysis, LLM fundamentals, generative AI</p></div>
+<div><h3>Cloud and deployment</h3><p>Azure fundamentals, API integration, model monitoring basics</p></div>
+<div><h3>Tools</h3><p>Git, GitHub, Swagger UI, GitHub Copilot, Claude</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<article class="proj big">
+<h3>MentalWell: AI-powered mental wellness app</h3>
+<p class="stack">Python · FastAPI · REST APIs · Firebase · Flutter</p>
+<ul>
+<li>Connected Python NLP pipelines to a Flutter app through FastAPI REST endpoints.</li>
+<li>Linked chatbot features to backend services, with Firebase authentication and user data management.</li>
+<li>Worked with a team of four to integrate components, debug issues and fix integration problems.</li>
+</ul>
+<a class="l" href="#" data-todo="github-mentalwell">View on GitHub</a>
+</article>
+<article class="proj">
+<h3>Retail sales and profitability analysis</h3>
+<p class="stack">Python · Pandas · SQL · Power BI · Matplotlib</p>
+<ul>
+<li>Analyzed retail sales data with Python, Pandas and SQL to understand sales trends and profitability.</li>
+<li>Wrote SQL queries to pull sales and profit metrics.</li>
+<li>Built Power BI dashboards that show retail performance at a glance.</li>
+</ul>
+<a class="l" href="#" data-todo="github-retail">View on GitHub</a>
+</article>
+</section>
+
+<section id="experience">
+<h2>Experience and education</h2>
+<div class="two">
+<ul class="tl">
+<li><h3>Mobile Application Development Intern</h3><div class="when">Core2Web, Pune · Apr 2025 – Sep 2025</div>
+<ul><li>Built mobile features and UI components in Flutter and Dart.</li><li>Implemented app logic and navigation flows.</li><li>Used Git with teammates to debug and integrate features in the Lansio app.</li></ul></li>
+</ul>
+<ul class="tl">
+<li><h3>B.E. Information Technology</h3><div class="when">Smt. Kashibai Navale College of Engineering, Pune · 2022 – 2026</div><p>Savitribai Phule Pune University. CGPA 8.21/10.</p></li>
+<li><h3>Leadership</h3><div class="when">College activities</div><p>NSS student/teacher coordinator for a seven-day winter camp, and student coordinator for a poster presentation event with 70+ participants.</p></li>
+</ul>
+</div>
+</section>
+
+<section id="research">
+<h2>Research</h2>
+<div class="paper">
+<h3>MentalWell: AI Mental Health Assistant with Data Privacy</h3>
+<p>International Journal of Engineering Development and Research (IJEDR), Vol. 14, Issue 1, pp. 548–556. January 2026.</p>
+<a class="l" href="#" data-todo="paper" style="color:var(--accent);font-weight:500">Read the paper</a>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s talk</h2>
+<p style="max-width:34em;color:var(--muted);margin:0 0 20px">I’m looking for my first software role. Email me, or find me on LinkedIn and GitHub.</p>
+<a class="mail" href="mailto:sakshisadgir63@gmail.com">sakshisadgir63@gmail.com</a>
+<p style="margin:22px 0 0"><a href="tel:+917499476636">+91 74994 76636</a> &nbsp;·&nbsp; <a href="#" data-todo="linkedin">LinkedIn</a> &nbsp;·&nbsp; <a href="#" data-todo="github">GitHub</a></p>
+</section>
+<footer>© 2026 Sakshi Sadgir · Pune, Maharashtra</footer>
+</div>
+</body>
+</html>
